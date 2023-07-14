@@ -1,70 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Movies Application</title>
+    <title>Education Website</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Movies Application</h1>
+    <header>
+        <h1>Education Website</h1>
+    </header>
 
-    <form id="movieForm">
-        <label for="title">Movie Title:</label>
-        <input type="text" id="title" required>
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" id="genre" required>
-        <br>
-        <label for="year">Year:</label>
-        <input type="number" id="year" required>
-        <br>
-        <button type="submit">Add Movie</button>
-    </form>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <br>
+    <section>
+        <h2>Welcome to our Ed<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Website</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Education Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <table id="moviesTable">
-        <tr>
-            <th>Title</th>
-            <th>Genre</th>
-            <th>Year</th>
-        </tr>
-    </table>
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar auctor tortor, vel lacinia nisl ullamcorper at. In rutrum odio vitae quam facilisis, eget egestas neque vulputate. Sed consectetur justo mauris, at tincidunt orci ultrices id.</p>
+    </section>
 
-    <script>
-        document.getElementById('movieForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+    <section>
+      <h2>Our Courses</h2>
+      <ul>
+        <li>Mathematics</li>
+            <li>Science</li>
+            <li>History</li>
+            <li>English</li>
+      </ul>
+    </section>
 
-            var title = document.getElementById('title').value;
-            var genre = document.getElementById('genre').value;
-            var year = document.getElementById('year').value;
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
 
-            var row = document.createElement('tr');
-            var titleCell = document.createElement('td');
-            var genreCell = document.createElement('td');
-            var yearCell = document.createElement('td');
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email">
 
-            titleCell.textContent = title;
-            genreCell.textContent = genre;
-            yearCell.textContent = year;
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message"></textarea>
 
-            row.appendChild(titleCell);
-            row.appendChild(genreCell);
-            row.appendChild(yearCell);
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
-            document.getElementById('moviesTable').appendChild(row);
+  <footer>
+    <p>&copy; 2023 RA Classes. All rights reserved.</p>
+  </footer>
+</body>
+</html>ucation Website!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla velit et nisl fermentum vestibulum. Donec eu nibh semper, dignissim ipsum a, consequat purus. Nulla facilisi. Mauris non odio non lorem auctor tristique. Quisque ut tortor luctus, finibus neque id, fermentum sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
 
-            document.getElementById('movieForm').reset();
-        });
-    </script>
+    <footer>
+        <p>&copy; 2023 RA Classes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
