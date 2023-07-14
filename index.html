@@ -6,7 +6,7 @@
 <body>
   <h1>Train Book ticket</h1>
 
-  <form>
+  <form id="myForm">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
 
@@ -15,7 +15,6 @@
 
     <input type="submit" value="Login">
   </form>
-
   <script>
     document.getElementById("myForm").addEventListener("Login", function(event) {
       event.preventDefault(); // Prevent the form from being submitted
