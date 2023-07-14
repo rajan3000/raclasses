@@ -4,7 +4,40 @@
   <title>Trainbooking</title>
 </head>
 <body>
+  <h1>Train Book<!DOCTYPE html>
+<html>
+<head>
+  <title>Trainbooking</title>
+</head>
+<body>
   <h1>Train Book ticket</h1>
+
+  <form id="myForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+  <script>
+    document.getElementById("myForm").addEventListener("Login", function(event) {
+      event.preventDefault(); // Prevent the form from being submitted
+
+      // Get the form data
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+
+      // Perform any necessary validation or processing of the form data here
+
+      // Redirect to the new page
+      window.location.href = "trainbook.html";
+    });
+  </script>
+</body>
+</html>
+ ticket</h1>
 
   <form id="myForm">
     <label for="username">Username:</label>
